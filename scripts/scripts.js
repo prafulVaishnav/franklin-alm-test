@@ -115,10 +115,23 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
+function loadNonLoggedIn() {
+  const nonLoggedInDiv = document.getElementsByClassName('non-logged-in');
+  if (nonLoggedInDiv.length > 0) {
+    window.almCDNBaseURL="https://cpcontentsqe.adobe.com/public/alm-non-logged-in";
+    let rootDiv = document.createElement('div');
+    rootDiv.setAttribute("id", "root");
+    nonLoggedInDiv.appendChild(rootDiv);
+    loadCSS(`${window.hlx.codeBasePath}/styles/nli.css`);
+    await import(`${window.hlx.codeBasePath}/scripts/nli.js`);
+  }
+}
+
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  loadNonLoggedIn();
 }
 
 loadPage();
