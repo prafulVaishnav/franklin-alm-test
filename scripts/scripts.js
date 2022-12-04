@@ -121,7 +121,7 @@ function loadNonLoggedIn() {
     window.almCDNBaseURL="https://cpcontentsqe.adobe.com/public/alm-non-logged-in";
     let rootDiv = document.createElement('div');
     rootDiv.setAttribute("id", "root");
-    nonLoggedInDiv.appendChild(rootDiv);
+    nonLoggedInDiv[0].appendChild(rootDiv);
     loadCSS(`${window.hlx.codeBasePath}/styles/nli.css`);
     import('./nli.js');
   }
