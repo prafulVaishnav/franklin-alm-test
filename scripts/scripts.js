@@ -122,7 +122,8 @@ function loadNonLoggedIn() {
     let rootDiv = document.createElement('div');
     rootDiv.setAttribute("id", "root");
     nonLoggedInDiv[0].appendChild(rootDiv);
-    //window.ALM = {};
+    window.ALM = window.ALM || {};
+    window.ALM.ALMConfig = window.ALM.ALMConfig || {};
     loadCSS(`${window.hlx.codeBasePath}/styles/nli.css`);
     import('./nli.js');
     import('./nli1.js');
