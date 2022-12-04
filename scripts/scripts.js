@@ -118,12 +118,12 @@ function loadDelayed() {
 function loadNonLoggedIn() {
   const nonLoggedInDiv = document.getElementsByClassName('non-logged-in');
   if (nonLoggedInDiv.length > 0) {
-    window.almCDNBaseURL="https://cpcontentsqe.adobe.com/public/alm-non-logged-in";
-    let rootDiv = document.createElement('div');
-    rootDiv.setAttribute("id", "root");
-    nonLoggedInDiv[0].appendChild(rootDiv);
-    window.ALM = window.ALM || {};
-    window.ALM.ALMConfig = window.ALM.ALMConfig || {};
+    // window.almCDNBaseURL="https://cpcontentsqe.adobe.com/public/alm-non-logged-in";
+    // let rootDiv = document.createElement('div');
+    // rootDiv.setAttribute("id", "root");
+    // nonLoggedInDiv[0].appendChild(rootDiv);
+    // window.ALM = window.ALM || {};
+    // window.ALM.ALMConfig = window.ALM.ALMConfig || {};
     loadCSS(`${window.hlx.codeBasePath}/styles/nli.css`);
 
     const scriptNli = document.createElement('script');
@@ -133,8 +133,6 @@ function loadNonLoggedIn() {
     const scriptNli1 = document.createElement('script');
     scriptNli1.src = '/scripts/nli1.js';
     document.head.appendChild(scriptNli1);
-    // import('./nli.js');
-    // import('./nli1.js');
   }
 }
 
