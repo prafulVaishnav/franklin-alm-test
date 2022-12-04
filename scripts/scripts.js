@@ -118,7 +118,7 @@ function loadDelayed() {
 function loadNonLoggedIn() {
   const nonLoggedInDiv = document.getElementsByClassName('non-logged-in');
   if (nonLoggedInDiv.length > 0) {
-    window.almCDNBaseURL="https://cpcontentsqe.adobe.com/public/alm-non-logged-in";
+    window.almCDNBaseURL="https://cpcontentsdev.adobe.com/public/alm-non-logged-in";
     // let rootDiv = document.createElement('div');
     // rootDiv.setAttribute("id", "root");
     // nonLoggedInDiv[0].appendChild(rootDiv);
