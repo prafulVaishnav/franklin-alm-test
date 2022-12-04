@@ -127,11 +127,11 @@ function loadNonLoggedIn() {
     loadCSS(`${window.hlx.codeBasePath}/styles/nli.css`);
 
     const scriptNli = document.createElement('script');
-    scriptNli.src = './nli.js';
+    scriptNli.src = '/scripts/nli.js';
     document.head.appendChild(scriptNli);
 
     const scriptNli1 = document.createElement('script');
-    scriptNli1.src = './nli1.js';
+    scriptNli1.src = '/scripts/nli1.js';
     document.head.appendChild(scriptNli1);
     // import('./nli.js');
     // import('./nli1.js');
