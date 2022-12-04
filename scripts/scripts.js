@@ -123,7 +123,7 @@ function loadNonLoggedIn() {
     // rootDiv.setAttribute("id", "root");
     // nonLoggedInDiv[0].appendChild(rootDiv);
     // window.ALM = window.ALM || {};
-    // window.ALM.ALMConfig = window.ALM.ALMConfig || {};
+    window.ALM.ALMConfig = window.ALM.ALMConfig || {};
     loadCSS(`${window.hlx.codeBasePath}/styles/nli.css`);
 
     const scriptNli = document.createElement('script');
