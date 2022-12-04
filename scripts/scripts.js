@@ -123,7 +123,7 @@ function loadNonLoggedIn() {
     rootDiv.setAttribute("id", "root");
     nonLoggedInDiv.appendChild(rootDiv);
     loadCSS(`${window.hlx.codeBasePath}/styles/nli.css`);
-    await import(`${window.hlx.codeBasePath}/scripts/nli.js`);
+    import('./nli.js');
   }
 }
 
