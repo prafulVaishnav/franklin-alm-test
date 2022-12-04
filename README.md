@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: [https://main--{repo}--{owner}.hlx.page/](https://main--franklin-alm-test--prafulvaishnav.hlx.page/)
+- Live: [https://main--{repo}--{owner}.hlx.live/](https://main--franklin-alm-test--prafulvaishnav.hlx.live/)
 
 ## Installation
 
