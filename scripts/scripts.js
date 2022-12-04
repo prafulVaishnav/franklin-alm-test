@@ -128,11 +128,11 @@ function loadNonLoggedIn() {
 
     const scriptNli = document.createElement('script');
     scriptNli.src = './nli.js';
-    document.head.appendChild(script);
+    document.head.appendChild(scriptNli);
 
     const scriptNli1 = document.createElement('script');
     scriptNli1.src = './nli1.js';
-    document.head.appendChild(script);
+    document.head.appendChild(scriptNli1);
     // import('./nli.js');
     // import('./nli1.js');
   }
