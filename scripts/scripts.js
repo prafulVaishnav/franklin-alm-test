@@ -125,8 +125,16 @@ function loadNonLoggedIn() {
     window.ALM = window.ALM || {};
     window.ALM.ALMConfig = window.ALM.ALMConfig || {};
     loadCSS(`${window.hlx.codeBasePath}/styles/nli.css`);
-    import('./nli.js');
-    import('./nli1.js');
+
+    const scriptNli = document.createElement('script');
+    scriptNli.src = './nli.js';
+    document.head.appendChild(script);
+
+    const scriptNli1 = document.createElement('script');
+    scriptNli1.src = './nli1.js';
+    document.head.appendChild(script);
+    // import('./nli.js');
+    // import('./nli1.js');
   }
 }
 
